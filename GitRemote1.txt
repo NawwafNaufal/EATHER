@@ -1,0 +1,156 @@
+LENOVO@DESKTOP-JEFCHSA MINGW64 ~/OneDrive/Desktop
+$ git clone https://github.com/NawwafNaufal/EATHER.git
+Cloning into 'EATHER'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+LENOVO@DESKTOP-JEFCHSA MINGW64 ~/OneDrive/Desktop
+$ cd EATHER
+
+LENOVO@DESKTOP-JEFCHSA MINGW64 ~/OneDrive/Desktop/EATHER (main)
+$ git remote
+origin
+
+LENOVO@DESKTOP-JEFCHSA MINGW64 ~/OneDrive/Desktop/EATHER (main)
+$ git remote -v
+origin  https://github.com/NawwafNaufal/EATHER.git (fetch)
+origin  https://github.com/NawwafNaufal/EATHER.git (push)
+
+LENOVO@DESKTOP-JEFCHSA MINGW64 ~/OneDrive/Desktop/EATHER (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+LENOVO@DESKTOP-JEFCHSA MINGW64 ~/OneDrive/Desktop/EATHER (main)
+$ alias graph="git log --all --decorate --oneline --graph"
+
+LENOVO@DESKTOP-JEFCHSA MINGW64 ~/OneDrive/Desktop/EATHER (main)
+$ graph
+* a6607c5 (HEAD -> main, origin/main, origin/HEAD) Initial commit
+
+LENOVO@DESKTOP-JEFCHSA MINGW64 ~/OneDrive/Desktop/EATHER (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+LENOVO@DESKTOP-JEFCHSA MINGW64 ~/OneDrive/Desktop/EATHER (main)
+$ git commit -am "Tambah Html"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+LENOVO@DESKTOP-JEFCHSA MINGW64 ~/OneDrive/Desktop/EATHER (main)
+$ git add .
+
+LENOVO@DESKTOP-JEFCHSA MINGW64 ~/OneDrive/Desktop/EATHER (main)
+$ git commit -m "Tambah Html"
+[main e7656f2] Tambah Html
+ 1 file changed, 11 insertions(+)
+ create mode 100644 Index.html
+
+LENOVO@DESKTOP-JEFCHSA MINGW64 ~/OneDrive/Desktop/EATHER (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+LENOVO@DESKTOP-JEFCHSA MINGW64 ~/OneDrive/Desktop/EATHER (main)
+$ graph
+* e7656f2 (HEAD -> main) Tambah Html
+* a6607c5 (origin/main, origin/HEAD) Initial commit
+
+LENOVO@DESKTOP-JEFCHSA MINGW64 ~/OneDrive/Desktop/EATHER (main)
+$ git push
+info: please complete authentication in your browser...
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 445 bytes | 222.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/NawwafNaufal/EATHER.git
+   a6607c5..e7656f2  main -> main
+
+LENOVO@DESKTOP-JEFCHSA MINGW64 ~/OneDrive/Desktop/EATHER (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+LENOVO@DESKTOP-JEFCHSA MINGW64 ~/OneDrive/Desktop/EATHER (main)
+$ graph
+* e7656f2 (HEAD -> main, origin/main, origin/HEAD) Tambah Html
+* a6607c5 Initial commit
+
+LENOVO@DESKTOP-JEFCHSA MINGW64 ~/OneDrive/Desktop/EATHER (main)
+$ git commint -am "Tambah P"
+git: 'commint' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+LENOVO@DESKTOP-JEFCHSA MINGW64 ~/OneDrive/Desktop/EATHER (main)
+$ graph
+* e7656f2 (HEAD -> main, origin/main, origin/HEAD) Tambah Html
+* a6607c5 Initial commit
+
+LENOVO@DESKTOP-JEFCHSA MINGW64 ~/OneDrive/Desktop/EATHER (main)
+$ git push
+Everything up-to-date
+
+LENOVO@DESKTOP-JEFCHSA MINGW64 ~/OneDrive/Desktop/EATHER (main)
+$  git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+LENOVO@DESKTOP-JEFCHSA MINGW64 ~/OneDrive/Desktop/EATHER (main)
+$ git commit -am "Tambah P"
+[main a69f6a0] Tambah P
+ 1 file changed, 1 insertion(+)
+
+LENOVO@DESKTOP-JEFCHSA MINGW64 ~/OneDrive/Desktop/EATHER (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+LENOVO@DESKTOP-JEFCHSA MINGW64 ~/OneDrive/Desktop/EATHER (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 583 bytes | 291.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/NawwafNaufal/EATHER.git
+   e7656f2..a69f6a0  main -> main
+
+LENOVO@DESKTOP-JEFCHSA MINGW64 ~/OneDrive/Desktop/EATHER (main)
+$
